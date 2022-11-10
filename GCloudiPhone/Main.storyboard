@@ -2504,6 +2504,7 @@
                         <outlet property="CouponsTable" destination="178142" id="name-outlet-178142"/>
                         <outlet property="StoreImage" destination="178114" id="name-outlet-178114"/>
                     </connections>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="177990" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3577,7 +3578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="358631" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="1108"/>
+            <point key="canvasLocation" x="1995" y="719"/>
         </scene>
         <!--Punkte einlösen-->
         <scene sceneID="366641">
