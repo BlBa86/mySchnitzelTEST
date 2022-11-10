@@ -70,6 +70,10 @@ namespace GCloudiPhone
             webView.Opaque = false;
             webView.BackgroundColor = UIColor.Clear;
 
+            NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+
             View.AddSubview(webView);
 
             if (storeName == "Eisenstadt")
@@ -89,6 +93,15 @@ namespace GCloudiPhone
                 webView.LoadRequest(new NSUrlRequest(url4));
             }
           
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
         }
 
         //    public override void ViewDidLoad()
