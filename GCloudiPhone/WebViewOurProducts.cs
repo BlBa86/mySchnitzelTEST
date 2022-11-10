@@ -1,5 +1,7 @@
- using Foundation;
+using CoreGraphics;
+using Foundation;
 using System;
+using System.Threading.Tasks;
 using UIKit;
 using WebKit;
 
@@ -18,6 +20,8 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+          
+
             //Dodato jer ukidamo tab bar
             this.NavigationController.SetNavigationBarHidden(false, true);
 
@@ -25,6 +29,7 @@ namespace GCloudiPhone
 
 
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
+            //webView.ScrollView.ContentOffset = new CGPoint(200, 200);
             View.AddSubview(webView);
 
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
@@ -44,6 +49,14 @@ namespace GCloudiPhone
 
             //webView.Bounds.Offset
 
+           
+
+     
+               // webView.ScrollView.ContentInset = new UIEdgeInsets(0, 0, 0, 0);
+                
+
+
+
             webView.LoadRequest(new NSUrlRequest(url));
         }
 
@@ -52,6 +65,11 @@ namespace GCloudiPhone
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
+
+            //var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
+            //webView.ScrollView.ContentOffset = new CGPoint(200, 200);
+            //View.AddSubview(webView);
+
 
             NavigationItem.Title = "Speisekarte";
 
