@@ -44,14 +44,11 @@ namespace GCloudiPhone
 
             //webView.ScrollView.ContentOffset = CGPointMake(0, 100);
 
-            //webView.WillChangeValue("window.scrollTo(200, 200)");
+            //webView.Eval("window.scrollTo(200, 200)");
 
             //webView.ScrollView.ScrollEnabled = false;
 
             //webView.Bounds.Offset
-
-
-
 
             // webView.ScrollView.ContentInset = new UIEdgeInsets(0, 0, 0, 0);
 
@@ -59,8 +56,8 @@ namespace GCloudiPhone
             //scrollPoint = new CGPoint(x: scrollPoint.X, y: webView.ScrollView.ContentSize.Height - webView.Frame.Size.Height);
             //webView.ScrollView.SetContentOffset(scrollPoint, animated: true);
 
-            webView.ScrollView.SetContentOffset(new CGPoint(0,500), animated: true);
-            webView.ScrollView.Bounces = false;
+            //webView.ScrollView.SetContentOffset(new CGPoint(0,500), animated: true);
+            //webView.ScrollView.Bounces = false;
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
