@@ -3648,12 +3648,13 @@
         <scene sceneID="386584">
             <objects>
                 <viewController id="386585" customClass="WebShopViewController" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
-                    <view key="view" contentMode="scaleAspectFit" id="386586">
+                    <view key="view" contentMode="scaleToFill" id="386586">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="386583"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="386587" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
