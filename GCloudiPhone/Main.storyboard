@@ -3533,14 +3533,14 @@
         <scene sceneID="328292">
             <objects>
                 <viewController id="328293" customClass="WebViewOurProducts" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
-                    <view key="view" contentMode="scaleToFill" id="328294" clipsSubviews="YES">
+                    <view key="view" contentMode="scaleToFill" id="328294">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="328298"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speisekarte" id="328295"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="328296" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
