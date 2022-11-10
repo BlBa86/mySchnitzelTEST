@@ -40,10 +40,14 @@ namespace GCloudiPhone
 
             //webView.WillChangeValue("window.scrollTo(200, 200)");
 
-            webView.ScrollView.ScrollEnabled = false;
+            //webView.ScrollView.ScrollEnabled = false;
+
+            webView.Bounds.Offset
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
+
+       
 
         public override void ViewWillAppear(bool animated)
         {
