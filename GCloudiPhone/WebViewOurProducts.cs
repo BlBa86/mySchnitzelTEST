@@ -60,6 +60,7 @@ namespace GCloudiPhone
             //webView.ScrollView.SetContentOffset(scrollPoint, animated: true);
 
             webView.ScrollView.SetContentOffset(new CGPoint(0,500), animated: true);
+            webView.ScrollView.Bounces = false;
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
