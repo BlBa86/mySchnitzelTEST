@@ -3532,7 +3532,7 @@
         <!--Speisekarte-->
         <scene sceneID="328292">
             <objects>
-                <viewController id="328293" customClass="WebViewOurProducts" sceneMemberID="viewController">
+                <viewController id="328293" customClass="WebViewOurProducts" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
                     <view key="view" contentMode="scaleToFill" id="328294">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
