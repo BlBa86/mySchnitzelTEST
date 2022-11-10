@@ -42,7 +42,7 @@ namespace GCloudiPhone
 
             //webView.ScrollView.ScrollEnabled = false;
 
-            webView.Bounds.Offset
+            //webView.Bounds.Offset
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
