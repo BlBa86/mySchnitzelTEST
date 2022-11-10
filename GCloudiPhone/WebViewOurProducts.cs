@@ -50,18 +50,19 @@ namespace GCloudiPhone
 
             //webView.Bounds.Offset
 
-           
-
-     
-               // webView.ScrollView.ContentInset = new UIEdgeInsets(0, 0, 0, 0);
-                
 
 
+
+            // webView.ScrollView.ContentInset = new UIEdgeInsets(0, 0, 0, 0);
+
+            //var scrollPoint = this.View.ConvertPointFromCoordinateSpace(new CGPoint(x: 0, y: 0), webView.ScrollView);
+            //scrollPoint = new CGPoint(x: scrollPoint.X, y: webView.ScrollView.ContentSize.Height - webView.Frame.Size.Height);
+            //webView.ScrollView.SetContentOffset(scrollPoint, animated: true);
+
+            webView.ScrollView.SetContentOffset(new CGPoint(0,500), animated: true);
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
-
-       
 
         public override void ViewWillAppear(bool animated)
         {
