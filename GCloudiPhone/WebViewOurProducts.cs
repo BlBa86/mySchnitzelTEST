@@ -59,6 +59,7 @@ namespace GCloudiPhone
             //webView.ScrollView.SetContentOffset(new CGPoint(0,500), animated: true);
             //webView.ScrollView.Bounces = false;
 
+            //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
             webView.Opaque = false;
             webView.BackgroundColor = UIColor.Clear;
 

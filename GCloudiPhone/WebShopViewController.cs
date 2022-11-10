@@ -56,6 +56,10 @@ namespace GCloudiPhone
             //webView.ScrollView.ScrollEnabled = false;
             View.AddSubview(webView);
 
+            //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
+            webView.Opaque = false;
+            webView.BackgroundColor = UIColor.Clear;
+
             if (storeName == "Eisenstadt")
             {
                 webView.LoadRequest(new NSUrlRequest(urlEisenstadt));

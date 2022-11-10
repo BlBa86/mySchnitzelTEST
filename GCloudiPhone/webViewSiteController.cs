@@ -30,6 +30,10 @@ namespace GCloudiPhone
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
             };
 
+            //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
+            webView.Opaque = false;
+            webView.BackgroundColor = UIColor.Clear;
+
             webView.LoadRequest(new NSUrlRequest(url));
         }
 
