@@ -26,6 +26,7 @@ namespace GCloudiPhone
             this.NavigationController.SetNavigationBarHidden(false, true);
 
             NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
 
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
