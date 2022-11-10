@@ -33,10 +33,14 @@ namespace GCloudiPhone
             };
             //
 
-           
-            webView.ScrollView.SetContentOffset(CoreGraphics.CGPoint.Empty, true);
+
+            //webView.ScrollView.SetContentOffset(CoreGraphics.CGPoint.Empty, true);
 
             //webView.ScrollView.ContentOffset = CGPointMake(0, 100);
+
+            //webView.WillChangeValue("window.scrollTo(200, 200)");
+
+            webView.ScrollView.ScrollEnabled = false;
 
             webView.LoadRequest(new NSUrlRequest(url));
         }
