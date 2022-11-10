@@ -2708,7 +2708,7 @@
         <!--Rechnungen-->
         <scene sceneID="279770">
             <objects>
-                <tableViewController title="Rechnungen" id="279771" customClass="InvoiceTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Rechnungen" id="279771" customClass="InvoiceTableViewController" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="279772">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2778,6 +2778,7 @@
                     <connections>
                         <outlet property="exportInvoices" destination="290005" id="name-outlet-290005"/>
                     </connections>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="279777" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
