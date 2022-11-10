@@ -41,6 +41,10 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
+            NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+
             NavigationItem.Title = "Produkte";
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {

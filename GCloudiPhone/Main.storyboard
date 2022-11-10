@@ -1499,7 +1499,7 @@
         <!--Change Password Table View Controller-->
         <scene sceneID="65109">
             <objects>
-                <tableViewController id="65110" customClass="ChangePasswordTableViewController" sceneMemberID="viewController">
+                <tableViewController id="65110" customClass="ChangePasswordTableViewController" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="65111">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1726,6 +1726,7 @@
                         <outlet property="NewPwLabel" destination="482497" id="name-outlet-482497"/>
                         <outlet property="OldPwLabel" destination="65134" id="name-outlet-65134"/>
                     </connections>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65116" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1734,7 +1735,7 @@
         <!--Forgot Passwort View Controller-->
         <scene sceneID="wp3-ta-dn0">
             <objects>
-                <viewController id="ssc-ec-ofO" customClass="ForgotPasswortViewController" sceneMemberID="viewController">
+                <viewController id="ssc-ec-ofO" customClass="ForgotPasswortViewController" sceneMemberID="viewController" extendedLayoutIncludesOpaqueBars="YES">
                     <view key="view" contentMode="scaleToFill" id="Ms0-09-Sma">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1796,6 +1797,7 @@
                         <outlet property="SendButton" destination="YsS-Rk-v8U" id="name-outlet-YsS-Rk-v8U"/>
                         <outlet property="UsernameEmailTextField" destination="5Hf-g9-uwN" id="name-outlet-5Hf-g9-uwN"/>
                     </connections>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJm-gP-wT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
