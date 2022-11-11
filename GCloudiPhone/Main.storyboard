@@ -494,7 +494,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="70913" kind="show" id="71786"/>
+                                                    <segue id="591615" destination="70913" kind="show" identifier="RegisterSeque"/>
+                                                    <action selector="RegisterButton_TouchUpInside:" destination="245" id="592793" eventType="touchUpInside"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2145,7 +2146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70919" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3373.6" y="-2101.799"/>
+            <point key="canvasLocation" x="3480.6" y="-2101.799"/>
         </scene>
         <!--Datenschutz-->
         <scene sceneID="103479">

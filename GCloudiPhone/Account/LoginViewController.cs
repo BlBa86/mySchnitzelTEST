@@ -329,5 +329,9 @@ namespace GCloudiPhone
             base.PrepareForSegue(segue, sender);
         }
 
+        partial void RegisterButton_TouchUpInside(UIButton sender)
+        {
+            PerformSegue("RegisterSeque", this);
+        }
     }
 }
