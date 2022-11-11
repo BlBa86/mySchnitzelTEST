@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using CoreGraphics;
@@ -98,7 +99,12 @@ namespace GCloudiPhone
             {
                 Mode = UIDatePickerMode.Date
             };
-            birthDatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Automatic;
+
+            if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
+            {
+                birthDatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Wheels;
+                Debug.WriteLine("iOS version: ", UIDevice.CurrentDevice.CheckSystemVersion(13, 0));
+            }
             birthDatePicker.SizeToFit();
             BirthDateTextField.InputView = birthDatePicker;
 
