@@ -111,9 +111,9 @@ namespace GCloudiPhone
             var toolBar = new UIToolbar(new CGRect(0, 0, 320, 44));
             toolBar.TintColor = UIColor.FromRGB(255, 87, 34);
             var doneBtn = new UIBarButtonItem("Fertig", style: UIBarButtonItemStyle.Plain, handler: ShowSelectedDate);
-            var space = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace, null, null);
+            //var space = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace, null, null);
 
-            toolBar.SetItems(new UIBarButtonItem[] { space, doneBtn }, true);
+            //toolBar.SetItems(new UIBarButtonItem[] { space, doneBtn }, true);
             BirthDateTextField.InputAccessoryView = toolBar;
 
 
