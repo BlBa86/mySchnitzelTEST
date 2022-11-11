@@ -100,10 +100,10 @@ namespace GCloudiPhone
                 Mode = UIDatePickerMode.Date
             };
 
-            if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
+            if (UIDevice.CurrentDevice.CheckSystemVersion(12, 0))
             {
                 birthDatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Wheels;
-                Debug.WriteLine("iOS version: ", UIDevice.CurrentDevice.CheckSystemVersion(13, 0));
+                Debug.WriteLine("iOS version: ", UIDevice.CurrentDevice.CheckSystemVersion(12, 0));
             }
             birthDatePicker.SizeToFit();
             BirthDateTextField.InputView = birthDatePicker;
