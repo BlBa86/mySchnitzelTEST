@@ -494,8 +494,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue id="591615" destination="70913" kind="show" identifier="RegisterSeque"/>
-                                                    <action selector="RegisterButton_TouchUpInside:" destination="245" id="592793" eventType="touchUpInside"/>
+                                                    <segue id="593990" destination="70913" kind="show"/>
                                                 </connections>
                                             </button>
                                         </subviews>
