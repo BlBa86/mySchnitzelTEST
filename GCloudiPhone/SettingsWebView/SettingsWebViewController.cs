@@ -20,6 +20,11 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            this.NavigationController.SetNavigationBarHidden(false, true);
+
+            NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+
             var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
             webView.Opaque = false;
@@ -55,6 +60,10 @@ namespace GCloudiPhone
             {
                 NavigationDelegate = new SettingsWebView.SettingsWebViewNavigationDelegate()
             };
+
+
+            webView.Opaque = false;
+            webView.BackgroundColor = UIColor.Clear;
 
             switch (Type)
             {
