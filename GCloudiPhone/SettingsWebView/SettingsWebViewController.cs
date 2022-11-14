@@ -20,6 +20,7 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
+            var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
             webView.Opaque = false;
             webView.BackgroundColor = UIColor.Clear;
