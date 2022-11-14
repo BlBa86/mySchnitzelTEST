@@ -20,7 +20,9 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
-
+            //Dodato jer se javljala bela boja iznad webView-a kada se otvori stranica.
+            webView.Opaque = false;
+            webView.BackgroundColor = UIColor.Clear;
         }
 
         public override void ViewWillAppear(bool animated)
