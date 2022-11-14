@@ -27,6 +27,9 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
+            NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+            View.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
             var webViewConfig = new WKWebViewConfiguration
             {
                 Preferences = new WKPreferences
