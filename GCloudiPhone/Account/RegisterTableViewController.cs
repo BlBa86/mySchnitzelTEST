@@ -79,6 +79,35 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
+            agbValue = Preferences.Get("agbValuePreferences", "no_AGB");
+            dataProtectionValue = Preferences.Get("dataProtectionValuePreferences", "no_DataProtection");
+
+            if (agbValue == "no_AGB")
+            {
+                switchAgb.Enabled = true;
+                agbValue = "AGB_Checked";
+            }
+            else
+            {
+                switchAgb.Enabled = false;
+                agbValue = "no_AGB";
+            }
+
+            switchAgb.ValueChanged += SwitchAgb_ValueChanged;
+
+            if (dataProtectionValue == "no_DataProtection")
+            {
+                switchDataProtection.Enabled = true;
+                dataProtectionValue = "DataProtection_Checked";
+            }
+            else
+            {
+                switchDataProtection.Enabled = false;
+                dataProtectionValue = "no_DataProtection";
+            }
+
+            switchDataProtection.ValueChanged += SwitchDataProtection_ValueChanged;
+
             expandedPaths = new List<NSIndexPath>();
 
           
