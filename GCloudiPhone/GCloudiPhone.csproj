@@ -25,9 +25,9 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>Apple Development: Misa Lukic (R23A4F54J4)</CodesignKey>
+    <CodesignKey>Apple Distribution: MV Data Datenverarbeitung GmbH (DHYSM7B46R)</CodesignKey>
     <MtouchExtraArgs>--registrar:static</MtouchExtraArgs>
-    <CodesignProvision>VS: at.mv-data.jetstore.mobile.myschnitzel Development</CodesignProvision>
+    <CodesignProvision>JetStore Mobile mySchnitzel DIST NEW</CodesignProvision>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -54,7 +54,7 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>Apple Development: Misa Lukic (R23A4F54J4)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
@@ -65,7 +65,6 @@
     <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
     <OnDemandResourcesInitialInstallTags></OnDemandResourcesInitialInstallTags>
     <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
-    <CodesignProvision>VS: at.mv-data.jetstore.mobile.myschnitzel Development</CodesignProvision>
     <BuildIpa>true</BuildIpa>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
@@ -77,13 +76,13 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>Apple Development: Misa Lukic (R23A4F54J4)</CodesignKey>
+    <CodesignKey>Apple Distribution: MV Data Datenverarbeitung GmbH (DHYSM7B46R)</CodesignKey>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <MtouchUseThumb>true</MtouchUseThumb>
     <BuildIpa>true</BuildIpa>
-    <CodesignProvision>VS: at.mv-data.jetstore.mobile.myschnitzel Development</CodesignProvision>
+    <CodesignProvision>JetStore Mobile mySchnitzel DIST NEW</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>none</DebugType>
@@ -827,7 +826,6 @@
     <ImageAsset Include="Resources\Images.xcassets\Dashboard-Image-3.imageset\Dashboard-Image-3.jpg" />
     <ImageAsset Include="Resources\Images.xcassets\Dashboard-Image-4.imageset\Dashboard-Image-4.jpg" />
     <ImageAsset Include="Resources\Images.xcassets\Dashboard-Image-5.imageset\Dashboard-Image-5.jpg" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\foodjet.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-1.appiconset\Contents.json" />
     <ImageAsset Include="Images.xcassets\Aktionen.imageset\Contents.json" />
     <ImageAsset Include="Images.xcassets\Produkte.imageset\Contents.json" />
@@ -866,6 +864,7 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-76x76%401x.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-76x76%402x.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\1024.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GCloud.Shared\GCloud.Shared.csproj">

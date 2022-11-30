@@ -5,9 +5,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>mySchnitzel</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.6</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.6</string>
+	<string>1.0.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -59,15 +59,11 @@
 		<string>remote-notification</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>at.mv-data.jetstore.mobile.myschnitzel</string>
+	<string>at.mv-data.jetstore.mobile.myschnitzelV2</string>
 	<key>CFBundleName</key>
 	<string>mySchnitzel</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>de</string>
-	<key>CFBundleLocalizations</key>
-	<string>de</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcon-old.appiconset</string>
 </dict>

@@ -177,7 +177,7 @@ namespace GCloudiPhone
             string iCode = InvitationCodeLabel.Text;
             //Unicode charachter for ü
             char c1 = '\u00FC';
-            string shareBodyText = user.Email + " schickt dir einen Freundes-Code @@" + "@@" + iCode + "@@" + "@@" + "f" + c1 + "r die Anwendung: https://apps.apple.com/ch/app/myschnitzel/id1356182017" + "@@" + "@@" +
+            string shareBodyText = user.Email + " schickt dir einen Freundes-Code @@" + "@@" + iCode + "@@" + "@@" + "f" + c1 + "r die Anwendung: https://apps.apple.com/ch/app/myschnitzel/id6444720025" + "@@" + "@@" +
                 "Bitte diesen Code bei der Registrierung angeben.";
             shareBodyText = shareBodyText.Replace("@@", System.Environment.NewLine);
             //shareBodyText = shareBodyText.Replace(iCode, "*" + iCode + "*");
@@ -185,7 +185,7 @@ namespace GCloudiPhone
             await Share.RequestAsync(new ShareTextRequest
             {
                 //Title = "Freundes-Code",
-                //Text = user.Email + " schickt dir einen " + invitationCode + ", f黵 die Anwendung: https://apps.apple.com/ch/app/myschnitzel/id1356182017"
+                //Text = user.Email + " schickt dir einen " + invitationCode + ", f黵 die Anwendung: https://apps.apple.com/ch/app/myschnitzel/id6444720025"
 
                 Text = shareBodyText
             });
