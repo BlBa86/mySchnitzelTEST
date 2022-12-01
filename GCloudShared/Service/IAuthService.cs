@@ -15,6 +15,9 @@ namespace GCloudShared.Service
         [Get("/api/HomeApi/Logout")]
         Task<HttpResponseMessage> Logout(String deviceId);
 
+        [Get("/api/HomeApi/DeleteUser")]
+        Task<HttpResponseMessage> DeleteUser(String email);
+
         [Get("/api/UsersApi/GetQrCode")]
         Task<Stream> LoadQrCode();
 

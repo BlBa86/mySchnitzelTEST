@@ -196,6 +196,11 @@ namespace GCloudiPhone
             await ShareInvitationCode();
         }
 
-
+        partial void RemoveAccount_Inside(UIButton sender)
+        {
+            var user = _userRepository.GetCurrentUser();
+            _authService.DeleteUser(user.Email);
+            PerformSegue("LoginSegue", this);
+        }
     }
 }

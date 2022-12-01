@@ -48,11 +48,23 @@ namespace GCloudiPhone
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton RemoveAccount { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableViewCell RemoveAccountCell { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView SettingsTable { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ShareInvitationCodeButton { get; set; }
+
+        [Action ("RemoveAccount_Inside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void RemoveAccount_Inside (UIKit.UIButton sender);
 
         [Action ("ShareInvitationCodeButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -98,6 +110,16 @@ namespace GCloudiPhone
             if (PersonalInformationCell != null) {
                 PersonalInformationCell.Dispose ();
                 PersonalInformationCell = null;
+            }
+
+            if (RemoveAccount != null) {
+                RemoveAccount.Dispose ();
+                RemoveAccount = null;
+            }
+
+            if (RemoveAccountCell != null) {
+                RemoveAccountCell.Dispose ();
+                RemoveAccountCell = null;
             }
 
             if (SettingsTable != null) {
