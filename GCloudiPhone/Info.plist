@@ -5,9 +5,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>mySchnitzel</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0</string>
+	<string>4.0</string>
 	<key>CFBundleVersion</key>
-	<string>3.0.0</string>
+	<string>4.0.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
