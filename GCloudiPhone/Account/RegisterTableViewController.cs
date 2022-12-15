@@ -656,6 +656,26 @@ namespace GCloudiPhone
                 AddError(NSIndexPath.FromRowSection(1, 1), "Freundes-Code ist ungültig");
             }
 
+            bool isEmailAvailable = _authService.IsEmailAvailable(EmailTextField.Text).Result;
+
+            if (!isEmailAvailable)
+            {
+                isValid = false;
+                //AddError(NSIndexPath.FromRowSection(1, 1), "E-Mail wird bereits verwendet");
+                InvokeOnMainThread(() =>
+                {
+                    var alert = UIAlertController.Create("E-Mail", "E-Mail wird bereits verwendet", UIAlertControllerStyle.Alert);
+                    alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Cancel, action =>
+                    {
+                        NavigationController.PopViewController(true);
+                        alert.Dispose();
+                    }));
+                    PresentViewController(alert, true, null);
+                    ToggleInput();
+                });
+
+            }
+
             RegisterTable.EndUpdates();
             return isValid;
         }
