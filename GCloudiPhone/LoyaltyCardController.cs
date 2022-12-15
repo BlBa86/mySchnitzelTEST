@@ -177,8 +177,8 @@ namespace GCloudiPhone
 
                 ShadowView.Hidden = true;
 
-                TotalPointsLabel.Hidden = true;
-                PointsLabel.Hidden = true;
+                TotalPointsLabel.Hidden = false;
+                PointsLabel.Hidden = false;
                 ProfileButton.Hidden = true;
             }
             else
