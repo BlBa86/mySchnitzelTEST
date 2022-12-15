@@ -132,17 +132,25 @@ namespace GCloudiPhone
             if (UIDevice.CurrentDevice.CheckSystemVersion(13, 0))
             {
                 birthDatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Wheels;
-                Debug.WriteLine("iOS version: ", UIDevice.CurrentDevice.CheckSystemVersion(13, 0));
+                birthDatePicker.BackgroundColor= UIColor.FromRGB(255, 205, 103);
+                //Debug.WriteLine("iOS version: ", UIDevice.CurrentDevice.CheckSystemVersion(13, 0));
             }
             birthDatePicker.SizeToFit();
             BirthDateTextField.InputView = birthDatePicker;
+
+            
+            //birthDatePicker.PreferredDatePickerStyle = UIDatePickerStyle.Inline;
+               
+          
+            //birthDatePicker.SizeToFit();
+            //BirthDateTextField.InputView = birthDatePicker;
 
             var toolBar = new UIToolbar(new CGRect(0, 0, 320, 44));
             toolBar.TintColor = UIColor.FromRGB(255, 87, 34);
             var doneBtn = new UIBarButtonItem("Fertig", style: UIBarButtonItemStyle.Plain, handler: ShowSelectedDate);
             //var space = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace, null, null);
-
             //toolBar.SetItems(new UIBarButtonItem[] { space, doneBtn }, true);
+            toolBar.SetItems(new UIBarButtonItem[] { doneBtn }, true);
             BirthDateTextField.InputAccessoryView = toolBar;
 
 
