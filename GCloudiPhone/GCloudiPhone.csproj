@@ -834,7 +834,6 @@
     <ImageAsset Include="Images.xcassets\PunkteEinlosen.imageset\Contents.json" />
     <ImageAsset Include="Images.xcassets\Standorte.imageset\Contents.json" />
     <ImageAsset Include="Images.xcassets\WelcommeMessage.imageset\Contents.json" />
-    <ImageAsset Include="Images.xcassets\WelcommeMessage.imageset\mainHeader.png" />
     <ImageAsset Include="Images.xcassets\Standorte.imageset\icons8_marker3.png" />
     <ImageAsset Include="Images.xcassets\PunkteEinlosen.imageset\ebill_logo.png" />
     <ImageAsset Include="Images.xcassets\Speisekarte.imageset\speisekarte.png" />
@@ -865,6 +864,7 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-76x76%401x-1.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-76x76%402x-1.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-83.5x83.5%402x-1.png" />
+    <ImageAsset Include="Images.xcassets\WelcommeMessage.imageset\mainHeader-1.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GCloud.Shared\GCloud.Shared.csproj">
