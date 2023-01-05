@@ -45,7 +45,10 @@ namespace GCloudiPhone
             ShadowView.Layer.ShadowOpacity = 0.5f;
             ShadowView.Layer.ShadowRadius = 5.0f;
 
-           
+            CouponImage.Hidden = true;
+            //NavigationItem.Title = "Zurück";
+            //NavigationItem.BackBarButtonItem = new UIBarButtonItem("Zurück", UIBarButtonItemStyle.Plain, null);
+            NavigationItem.BackButtonTitle = "Zurück";
 
             //this.NavigationController.SetNavigationBarHidden(true, true);
             //NavigationController.NavigationBar.BackgroundColor = UIColor.Clear;
@@ -58,6 +61,15 @@ namespace GCloudiPhone
           
 
             base.ViewDidLoad();
+        }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            //NavigationItem.Title = "Zurück";
+            //NavigationItem.BackBarButtonItem = new UIBarButtonItem("Zurück", UIBarButtonItemStyle.Plain, null);
+            NavigationItem.BackButtonTitle = "Zurück";
+
+            base.ViewWillAppear(animated);
         }
 
         private void UpdateUI()

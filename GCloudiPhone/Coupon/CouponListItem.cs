@@ -26,7 +26,6 @@ namespace GCloudiPhone
             _authService = RestService.For<IAuthService>(HttpClientContainer.Instance.HttpClient);
         }
 
-
         public CouponListItem()
         {
             //SetCellData(coupon);

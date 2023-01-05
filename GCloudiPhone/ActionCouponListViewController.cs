@@ -90,6 +90,8 @@ namespace GCloudiPhone
             };
 
             CouponListNew.BackgroundColor = UIColor.FromRGB(255, 205, 103);
+
+            NavigationItem.BackButtonTitle = "Zurück";
         }
 
         public override void ViewWillAppear(bool animated)
@@ -99,6 +101,7 @@ namespace GCloudiPhone
             //Fiksni naziv radnje
             //NavigationItem.Title = "Eisenstadt";
             //NavigationItem.Title = "";
+            NavigationItem.BackButtonTitle = "Zurück";
 
             NavigationController.NavigationBar.BackgroundColor = UIColor.FromRGB(255, 205, 103);
             View.BackgroundColor = UIColor.FromRGB(255, 205, 103);

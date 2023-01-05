@@ -91,6 +91,8 @@ namespace GCloudiPhone
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
             };
 
+            //NavigationItem.Title = "Zurück";
+            NavigationItem.BackButtonTitle = "Zurück";
 
         }
 
@@ -100,6 +102,7 @@ namespace GCloudiPhone
 
             //Fiksni naziv radnje
             //NavigationItem.Title = "Eisenstadt";
+            NavigationItem.BackButtonTitle = "Zurück";
 
 
             NavigationItem.Title = "Punkte einlösen";
