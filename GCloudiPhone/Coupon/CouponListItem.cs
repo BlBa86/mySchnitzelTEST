@@ -182,6 +182,8 @@ namespace GCloudiPhone
                 CouponRedeemsLeft.TextColor = UIColor.Red;
                 this.Accessory = UITableViewCellAccessory.None;
                 //this.BackgroundColor = UIColor.LightGray;
+                this.Hidden = true;
+
                 UserInteractionEnabled = false;
 
                 if (CouponValidUntil != null)
