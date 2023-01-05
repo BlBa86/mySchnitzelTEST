@@ -40,7 +40,7 @@ namespace GCloudiPhone
         {
             
             Coupon = coupon;
-            //CouponRedeemsLeft.TextColor = UIColor.LightGray;
+            CouponRedeemsLeft.TextColor = UIColor.LightGray;
             //Accessory = UITableViewCellAccessory.DisclosureIndicator;
             //BackgroundColor = UIColor.Clear;
             UserInteractionEnabled = true;
@@ -53,19 +53,19 @@ namespace GCloudiPhone
             {
                 if (coupon.RedeemsLeft <= 0)
                 {
-                    //CouponRedeemsLeft.Text = $@"aufgebraucht";
+                    CouponRedeemsLeft.Text = $@"aufgebraucht";
                     coupon.IsValid = false;
                 }
                 else
                 {
                     //CouponRedeemsLeft.Text = $@"{coupon.RedeemsLeft}x einlösbar";
-
+                    CouponRedeemsLeft.Text = $@"{coupon.RedeemsLeft}";
                 }
 
             }
             else
             {
-                //CouponRedeemsLeft.Text = "∞";
+                CouponRedeemsLeft.Text = "∞";
             }
 
             var now = DateTime.Now;
@@ -164,19 +164,22 @@ namespace GCloudiPhone
                 Accessory = UITableViewCellAccessory.None;
             }
 
-       
-            if (Convert.ToInt32(totalPointsNew) > coupon.Value)
+            if (coupon.CouponType == CouponTypeDto.SpecialProductPoints)
             {
-                couponValidation = false;
+                if (Convert.ToInt32(totalPointsNew) > coupon.Value)
+                {
+                    couponValidation = false;
+                }
+                else
+                {
+                    couponValidation = true;
+                }
             }
-            else
-            {
-                couponValidation = true;
-            }
+         
 
             if (!coupon.IsValid || couponValidation)
             {
-                //CouponRedeemsLeft.TextColor = UIColor.Red;
+                CouponRedeemsLeft.TextColor = UIColor.Red;
                 this.Accessory = UITableViewCellAccessory.None;
                 //this.BackgroundColor = UIColor.LightGray;
                 UserInteractionEnabled = false;
@@ -188,12 +191,12 @@ namespace GCloudiPhone
 
                 if (coupon.ValidFrom.HasValue && coupon.ValidFrom.Value.Date > DateTime.Now)
                 {
-                    //CouponRedeemsLeft.Text = "noch nicht gültig";
+                    CouponRedeemsLeft.Text = "noch nicht gültig";
 
                 }
                 else if (coupon.ValidTo.HasValue && coupon.ValidTo.Value.Date < DateTime.Now)
                 {
-                    //CouponRedeemsLeft.Text = "abgelaufen";
+                    CouponRedeemsLeft.Text = "abgelaufen";
                 }
             }
 
