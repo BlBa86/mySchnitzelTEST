@@ -26,7 +26,7 @@
                         <constraint firstAttribute="width" constant="250" id="yNd-kK-A3d"/>
                     </constraints>
                 </imageView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="12793" animating="YES">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="12793" animating="YES" hidesWhenStopped="YES">
                     <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                     <color key="color" systemColor="systemOrangeColor" colorSpace="custom" customColorSpace="sRGB" red="1" green="0.584313725490196" blue="0" alpha="1"/>
                 </activityIndicatorView>
@@ -41,6 +41,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
+            <connections/>
         </view>
     </objects>
     <resources>

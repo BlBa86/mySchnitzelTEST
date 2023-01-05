@@ -393,10 +393,6 @@
     <Compile Include="ActionNavigationController.designer.cs">
       <DependentUpon>ActionNavigationController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActionCouponListViewController.cs" />
-    <Compile Include="ActionCouponListViewController.designer.cs">
-      <DependentUpon>ActionCouponListViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="SimpleCouponeNavigationController.cs" />
     <Compile Include="SimpleCouponeNavigationController.designer.cs">
       <DependentUpon>SimpleCouponeNavigationController.cs</DependentUpon>
@@ -412,6 +408,10 @@
     <Compile Include="Account\RegisterTableViewController.cs" />
     <Compile Include="Account\RegisterTableViewController.designer.cs">
       <DependentUpon>RegisterTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashback\ActionCouponListViewController.cs" />
+    <Compile Include="Cashback\ActionCouponListViewController.designer.cs">
+      <DependentUpon>ActionCouponListViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -865,6 +865,7 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-76x76%402x-1.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcon-old.appiconset\Icon-App-83.5x83.5%402x-1.png" />
     <ImageAsset Include="Images.xcassets\WelcommeMessage.imageset\mainHeader-1.png" />
+    <ImageAsset Include="Images.xcassets\Loading.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GCloud.Shared\GCloud.Shared.csproj">
@@ -1005,6 +1006,7 @@
     <Folder Include="Images.xcassets\SettingsNew.imageset\" />
     <Folder Include="Images.xcassets\StartUp.imageset\" />
     <Folder Include="Resources\Images.xcassets\AppIcon-new.imageset\" />
+    <Folder Include="Images.xcassets\Loading.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="GoogleService-Info.plist" />
