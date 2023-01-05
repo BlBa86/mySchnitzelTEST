@@ -177,7 +177,7 @@ namespace GCloudiPhone
             }
          
 
-            if (!coupon.IsValid || couponValidation)
+            if (!coupon.IsValid)
             {
                 CouponRedeemsLeft.TextColor = UIColor.Red;
                 this.Accessory = UITableViewCellAccessory.None;
@@ -200,6 +200,11 @@ namespace GCloudiPhone
                 {
                     CouponRedeemsLeft.Text = "abgelaufen";
                 }
+            }
+
+            if (couponValidation == true)
+            {
+                UserInteractionEnabled = false;
             }
 
 
