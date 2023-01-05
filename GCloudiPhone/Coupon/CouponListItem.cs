@@ -79,33 +79,40 @@ namespace GCloudiPhone
             if (CouponValidUntil != null)
             {
                 if (daydifferenceToFrom > 1)
-                {
-                    CouponValidUntil.Text = $@"Gültig in {daydifferenceToFrom} Tagen";
+                {   // If user has enough points do not show text on coupon 
+                    //CouponValidUntil.Text = $@"Gültig in {daydifferenceToFrom} Tagen";
+                    CouponValidUntil.Text = "";
                 }
                 else if (daydifferenceToFrom == 1)
                 {
-                    CouponValidUntil.Text = $@"Gültig in {daydifferenceToFrom} Tag";
+                    //CouponValidUntil.Text = $@"Gültig in {daydifferenceToFrom} Tag";
+                    CouponValidUntil.Text = "";
                 }
                 else if (daydifferenceToFrom == 0)
                 {
-                    CouponValidUntil.Text = $@"Ab heute gültig!";
+                    //CouponValidUntil.Text = $@"Ab heute gültig!";
+                    CouponValidUntil.Text = "";
                 }
 
                 if (daydifferenceToTo > 1 && daydifferenceToFrom <= 0)
                 {
-                    CouponValidUntil.Text = $@"Noch {daydifferenceToTo} Tage gültig!";
+                    //CouponValidUntil.Text = $@"Noch {daydifferenceToTo} Tage gültig!";
+                    CouponValidUntil.Text = "";
                 }
                 else if (daydifferenceToTo == 1)
                 {
-                    CouponValidUntil.Text = $@"Noch {daydifferenceToTo} Tag gültig!";
+                    //CouponValidUntil.Text = $@"Noch {daydifferenceToTo} Tag gültig!";
+                    CouponValidUntil.Text = "";
                 }
                 else if (daydifferenceToTo == 0)
                 {
-                    CouponValidUntil.Text = $@"Nur noch heute gültig!";
+                    //CouponValidUntil.Text = $@"Nur noch heute gültig!";
+                    CouponValidUntil.Text = "";
                 }
                 else
                 {
-                    CouponValidUntil.Text = "Gültig bis auf Widerruf";
+                    //CouponValidUntil.Text = "Gültig bis auf Widerruf";
+                    CouponValidUntil.Text = "";
                 }
             }
 
@@ -127,12 +134,13 @@ namespace GCloudiPhone
                 case CouponTypeDto.SpecialProductPoints:
                     if(Convert.ToInt32(totalPointsNew) > coupon.Value )
                     {
-                        CouponValue.Text = $@"{(coupon.Value).ToString()}" + " Punkte";
+                        CouponValue.Text = $@"{(Convert.ToInt32(coupon.Value)).ToString()}" + " Punkte";
+                        CouponValue.TextColor = UIColor.FromRGB(0,128,0);
                     }
                     else
                     {
                         var punkteFehlen = (-1*(Convert.ToInt32(totalPointsNew) - coupon.Value));
-                        CouponValue.Text = $@"{punkteFehlen.ToString()}" + " Punkte fehlen";
+                        CouponValue.Text = $@"{Convert.ToInt32(punkteFehlen).ToString()}" + " Punkte fehlen";
                         //CouponRedeemsLeft.TextColor = UIColor.Red;
                         CouponValue.TextColor = UIColor.Red;
                         //this.Accessory = UITableViewCellAccessory.None;
