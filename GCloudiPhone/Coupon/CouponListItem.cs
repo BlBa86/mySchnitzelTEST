@@ -79,7 +79,7 @@ namespace GCloudiPhone
             if (CouponValidUntil != null)
             {
                 if (daydifferenceToFrom > 1)
-                {   // If user has enough points do not show text on coupon 
+                {   // This text should never been shown 
                     //CouponValidUntil.Text = $@"Gültig in {daydifferenceToFrom} Tagen";
                     CouponValidUntil.Text = "";
                 }

@@ -28,10 +28,16 @@ namespace GCloudiPhone
         public string CouponType;
         //public StoreLocationDto Store { get; set; }
 
+        private readonly UserRepository _userRepository;
+        private readonly IAuthService _authService;
+
         public CouponListViewController(IntPtr handle) : base(handle)
         {
             _coupons = new List<CouponDto>();
             _couponService = RestService.For<IUserCouponService>(HttpClientContainer.Instance.HttpClient);
+
+            _userRepository = new UserRepository(DbBootstraper.Connection);
+            _authService = RestService.For<IAuthService>(HttpClientContainer.Instance.HttpClient);
         }
 
         public override void ViewDidLoad()
@@ -104,8 +110,14 @@ namespace GCloudiPhone
             //NavigationItem.Title = "Eisenstadt";
             NavigationItem.BackButtonTitle = "Zurück";
 
+            var user = _userRepository.GetCurrentUser();
+           
+            var totalPoints = _authService.GetTotalPointsByUserID(user.UserId).Result;
+            var totalPointsNew = totalPoints.Replace("\"", "");
 
-            NavigationItem.Title = "Punkte einlösen";
+
+
+            NavigationItem.Title = "Punkte einlösen" + "        " + totalPointsNew + " " + "Punkte"; ;
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)

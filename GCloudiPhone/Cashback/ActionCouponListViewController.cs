@@ -92,6 +92,8 @@ namespace GCloudiPhone
             CouponListNew.BackgroundColor = UIColor.FromRGB(255, 205, 103);
 
             NavigationItem.BackButtonTitle = "Zurück";
+
+         
         }
 
         public override void ViewWillAppear(bool animated)
