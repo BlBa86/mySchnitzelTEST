@@ -19,6 +19,7 @@ namespace GCloud.Shared
         //public const string BaseUrlHost = "dimitry.foodjet.online";
         public const int BaseUrlPort = 80;
 
+
 #else
         //public const string BaseUrlScheme = "https";
         //public const string BaseUrlHost = "app.foodjet.online";

@@ -194,7 +194,7 @@ namespace GCloudiPhone
                             var errorModel = apiException.GetApiErrorResult();
                             errorModel.Match(some =>
                             {
-                                using (var alertController = UIAlertController.Create("Login fehlgeschlagen!", "Benutzerkonto löschen", UIAlertControllerStyle.Alert))
+                                using (var alertController = UIAlertController.Create("Login fehlgeschlagen!", "", UIAlertControllerStyle.Alert))
                                 using (var okAction = UIAlertAction.Create("Ok", UIAlertActionStyle.Cancel, action => ToggleInputs()))
                                 {
                                     alertController.AddAction(okAction);

@@ -111,15 +111,18 @@ namespace GCloudiPhone
             NavigationItem.BackButtonTitle = "Zurück";
 
             var user = _userRepository.GetCurrentUser();
-           
-            var totalPoints = _authService.GetTotalPointsByUserID(user.UserId).Result;
-            var totalPointsNew = totalPoints.Replace("\"", "");
+
+            if (((AppDelegate)UIApplication.SharedApplication.Delegate).AuthState == AuthState.Authorized)
+            {
+                var totalPoints = _authService.GetTotalPointsByUserID(user.UserId).Result;
+                var totalPointsNew = totalPoints.Replace("\"", "");
+            }
 
 
-
-            //NavigationItem.Title = "Punkte einlösen" + " " + totalPointsNew + " " + "Punkte";
-            NavigationItem.Title = "Punkte einlösen";
-            //add new line
+                //NavigationItem.Title = "Punkte einlösen" + " " + totalPointsNew + " " + "Punkte";
+                //NavigationItem.Title = "Punkte einlösen";
+                //add new line
+                NavigationItem.Title = "Punkte einlösen";
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
