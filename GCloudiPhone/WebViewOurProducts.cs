@@ -20,7 +20,7 @@ namespace GCloudiPhone
         {
             base.ViewDidLoad();
 
-          
+            //NavigationItem.BackButtonTitle = "Zurück";
 
             //Dodato jer ukidamo tab bar
             this.NavigationController.SetNavigationBarHidden(false, true);
@@ -70,6 +70,7 @@ namespace GCloudiPhone
         {
             base.ViewWillAppear(animated);
 
+            //NavigationItem.BackButtonTitle = "Zurück";
             //var webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             //webView.ScrollView.ContentOffset = new CGPoint(200, 200);
             //View.AddSubview(webView);

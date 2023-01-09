@@ -117,7 +117,8 @@ namespace GCloudiPhone
 
 
 
-            NavigationItem.Title = "Punkte einlösen" + "       " + totalPointsNew + " " + "Punkte"; ;
+            //NavigationItem.Title = "Punkte einlösen" + " " + totalPointsNew + " " + "Punkte";
+            NavigationItem.Title = "Punkte"+ Environment.NewLine +  "einlösen";
             UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes()
             {
                 Font = UIFont.SystemFontOfSize(18.0f, UIFontWeight.Bold)
