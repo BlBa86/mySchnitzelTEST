@@ -15,6 +15,8 @@ namespace GCloud.Shared
 
         public const string BaseUrlScheme = "http";
         public const string BaseUrlHost = "schnitzeltest.foodjet.online";
+        //test enviroment:
+        //public const string BaseUrlHost = "dimitry.foodjet.online";
         public const int BaseUrlPort = 80;
 
 #else
@@ -25,6 +27,8 @@ namespace GCloud.Shared
 
         public const string BaseUrlScheme = "http";
         public const string BaseUrlHost = "schnitzeltest.foodjet.online";
+        //test enviroment
+        //public const string BaseUrlHost = "dimitry.foodjet.online";
         public const int BaseUrlPort = 80;
 
 #endif
